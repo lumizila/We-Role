@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  
+  <script src="jquery-1.11.3.js"></script> 
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+	<script src="ckeditor/ckeditor.js"></script>
+
+  <script src="maingame.js" type="text/javascript"></script> 
+	<style>
+		a{
+			color: #856941;
+		}
+		li>a{
+			background-color:#0193b7;
+			color: #856941;
+		}
+	</style>
+	
+</head>
+<body style = "background-color:#D1C5B7">
+	
+<div class="container-fluid" >
+	<div style="background-color:#063e53">
+		
+				<img src="head.jpg" class="img-rounded" alt="Game" width=100% height= 250 style="margin:0px;">
+		
+		<div class = "container-fluid" >
+					<div class="btn-group btn-group-lg" >
+						<button type="button" class="btn btn-primary" style="background-color:#063e53; margin:10px">Find games</button>
+						<a href="login.html" class="btn btn-primary" role="button" style="background-color:#063e53; margin:10px">Log Out</a>
+							<div class="btn-group btn-group-lg" >
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background-color:#063e53; margin:10px">
+								Create new game <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Tablet</a></li>
+									<li><a href="#">Smartphone</a></li>
+								</ul>
+							</div>
+					</div>
+		</div>
+	</div>
+	
+	<div class = "container-fluid">
+		<br><br>
+	    <div class ="row">
+		
+			<div class ="col-sm-4">
+				<div class="list-group" >
+					<a href="#" class="list-group-item active">Harry potter 4ALL!<span class="badge">5</span></a>
+					<a href="#" class="list-group-item">L.O.T. S2S2<span class="badge">10</span></a>
+					<a href="#" class="list-group-item">We stars, we wars!<span class="badge">80</span></a>
+				</div>
+			</div>
+			
+			<div class="col-sm-8">
+					
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#" style="color:#856941">Chapter 1</a></li>
+						<li><a href="#" style="color:#856941">Chapter 2</a></li>
+						<li><a href="#" style="color:#856941">Menu 2</a></li>
+						<li><a href="#" style="color:#856941">Menu 3</a></li>
+					</ul>
+				 
+					
+					
+					<div class="panel panel-default">
+					<div class="panel-heading">
+						
+						<div class ="row">
+							<div class="col-sm-8">Lumizila: </div>
+							<div class="col-sm-4">
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="#">Edit</a>	
+									</div>
+									<div class="col-sm-6">
+										<a href="#">Delete</a>	
+									</div>
+								</div>							
+							</div>
+							
+						</div>
+						
+					
+					</div>
+					<div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet enim metus, ac dapibus purus aliquam ac. Phasellus neque odio, placerat id augue non, lacinia efficitur est. Integer tristique nisl a tellus commodo, quis convallis massa tristique. Donec convallis, turpis fringilla ultrices pharetra, neque magna sodales justo, sit amet elementum eros nisi quis nunc. Pellentesque orci nisi, egestas non tristique dapibus, molestie dictum nisi. Curabitur gravida gravida urna, vitae aliquam nisi tincidunt id. Proin blandit sagittis dolor vel iaculis. Donec nec sollicitudin velit.
+
+<br>Suspendisse potenti. Nullam non risus metus. Curabitur risus libero, volutpat non efficitur a, molestie ut libero. Nulla eros ligula, aliquet eu efficitur vitae, porttitor vel mauris. Nunc arcu tortor, condimentum nec justo id, rhoncus accumsan est. Nulla in placerat ante. Curabitur volutpat est in dolor convallis euismod. Duis molestie nibh arcu, eu vehicula erat mollis nec. Maecenas ut massa nec nunc aliquam egestas. </div>
+					</div>
+					
+					<form id="texteditor">
+						<textarea name="editor1" id="editor1" rows="10" cols="80">
+							This is the text to be sent to the server.
+						</textarea>
+						<script>
+							// Replace the <textarea id="editor1"> with a CKEditor
+							// instance, using default configuration.
+							CKEDITOR.replace( 'editor1' );
+						</script>
+						<a href="maingame.html" id = "submitpost" type="submit" class="btn btn-default" style="background-color:#063e53;color:white">Submit</a>
+					</form>
+					
+					<div class = "container">
+						<div class="row">
+							<div class="col-sm-6">
+								<ul class="pagination" >
+									<li class="previous"><a href="#">Previous</a></li>
+									<li><a href="#">1</a></li>
+									<li class="active"><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li class="next"><a href="#">Next</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul class="pagination">
+									<li id ="newpost" class="previous"><a href="#">Write new post</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				
+			</div>
+		</div>
+	</div>
+</div>
+		
+</body>
+</html>
