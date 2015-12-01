@@ -12,64 +12,76 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body style = "background-color:#D1C5B7">
+<body>
 
-<div class="container">
-  <div class="container-fluid" style = "background-color:#856941; color:white;">
-	  <div class="row">
-		<div class="col-sm-8">
-			<div class = "jumbotron" style = "background-color:#856941; color:white; margin:0px;">
-			<h1>Login !</h1>
-			<p>First time here? Create an account, it's fast and easy!</p>
+<div class="container" style = "background-color:#D1C5B7">
+	  <div class="container-fluid" style = "background-color:#856941; color:white;">
+		  <div class="row">
+			<div class="col-sm-8">
+				<div class = "jumbotron" style = "background-color:#856941; color:white; margin:0px;">
+				<h1>Login !</h1>
+				<p>First time here? Create an account, it's fast and easy!</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+					<img src="game.jpg" class="img-circle" alt="Game" width= 230 style = "margin: 15px;">
+			</div>
+		  </div>
+	  </div>
+  
+	<nav class="navbar navbar-default" style="color: #856941; background-color:#063e53;">
+		<div class="container-fluid">
+			<div class="navbar-header" >
+			  <a class="navbar-brand" href="#" style="color:#FFFFFF">We Role</a>
+			</div>
+			<div>
+			  <ul class="nav navbar-nav navbar-right">
+				<li ><a href="home.html" style="color:#FFFFFF">home</a></li>
+				<li class= "active"><a href="login.html">log in</a></li>
+			  </ul>
 			</div>
 		</div>
-		<div class="col-sm-4">
-				<img src="game.jpg" class="img-circle" alt="Game" width= 230>
-		</div>
-	  </div>
-  </div>
+	</nav>
   
-	  <div class="row">
-		<div class="col-sm-6">
-		  <h3 style="color:#856941">Create a new account!</h3>
-		  <form role="form" class="col-sm-8">
-			  <div class="form-group">
-				<label for="email" style="color:#856941">Email address:</label>
-				<input type="email" class="form-control" id="email">
-			  </div>
-			  <div class="form-group">
-				<label for="pwd" style="color:#856941">Password:</label>
-				<input type="password" class="form-control" id="pwd">
-			  </div>
-			  <div class="form-group">
-				<label for="pwd" style="color:#856941">Desired Nickname:</label>
-				<input type="email" class="form-control" id="nickname">
-			  </div>
-			  <a href="maingame.html" id = "newacc" type="submit" class="btn btn-default" style="background-color:#063e53;color:white">Submit</a>
+		<div class="row">
+			<div class="col-sm-6">
+				  <h3 style="color:#856941">Create a new account!</h3>
+				  <form role="form" class="col-sm-8">
+					  <div class="form-group">
+						<label for="email" style="color:#856941">Email address:</label>
+						<input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+						<label for="pwd" style="color:#856941">Password:</label>
+						<input type="password" class="form-control" id="pwd">
+					  </div>
+					  <div class="form-group">
+						<label for="pwd" style="color:#856941">Desired Nickname:</label>
+						<input type="email" class="form-control" id="nickname">
+					  </div>
+					  <a href="maingame.html" id = "newacc" type="submit" class="btn btn-default" style="background-color:#063e53;color:white">Submit</a>
+					  <br><br>
+					</form>
+			</div>
+				<div class="col-sm-6">
+				  <h3 style="color:#856941">Login here</h3>
+				  <form role="form" class="col-sm-8">
+						  <div class="form-group">
+							<label for="email" style="color:#856941">Nickname:</label>
+							<input type="email" class="form-control" id="email">
+						  </div>
+						  <div class="form-group">
+							<label for="pwd" style="color:#856941">Password:</label>
+							<input type="password" class="form-control" id="pwd">
+						  </div>
+						  <div class="checkbox" style="color:#856941">
+							<label><input type="checkbox">Remember me</label>
+						  </div>
+						<a href="maingame.html" id = "start" type="submit" class="btn btn-default" style="background-color:#063e53;color:white">Start Game!</a>
 
-			</form>
-    </div>
-    <div class="col-sm-6">
-      <h3 style="color:#856941">Login here</h3>
-      <form role="form" class="col-sm-8">
-			  <div class="form-group">
-				<label for="email" style="color:#856941">Nickname:</label>
-				<input type="email" class="form-control" id="email">
-			  </div>
-			  <div class="form-group">
-				<label for="pwd" style="color:#856941">Password:</label>
-				<input type="password" class="form-control" id="pwd">
-			  </div>
-			  <div class="checkbox" style="color:#856941">
-				<label><input type="checkbox">Remember me</label>
-			  </div>
-			<a href="maingame.html" id = "start" type="submit" class="btn btn-default" style="background-color:#063e53;color:white">Start Game!</a>
-
-		</form>
-
-    </div>
-    
-  </div>
+					</form>
+				</div>
+		</div>
 </div>
 
 </body>
